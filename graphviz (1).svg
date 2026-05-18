@@ -1,0 +1,683 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3286pt" height="460pt" viewBox="0.00 0.00 3286.00 460.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 455.78)">
+<title>ER_SAT_Guatemala_Final_Pulido</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-455.78 3281.98,-455.78 3281.98,4 -4,4"/>
+<!-- Propietario -->
+<g id="node1" class="node">
+<title>Propietario</title>
+<polygon fill="#bfdbfe" stroke="#1e3a8a" points="310.78,-451.78 241.58,-451.78 241.58,-415.78 310.78,-415.78 310.78,-451.78"/>
+<text xml:space="preserve" text-anchor="middle" x="276.18" y="-430.48" font-family="Helvetica,sans-Serif" font-size="11.00">Propietario</text>
+</g>
+<!-- Ejerce -->
+<g id="node9" class="node">
+<title>Ejerce</title>
+<polygon fill="#fde68a" stroke="#92400e" points="47.18,-367.78 0,-346.58 47.18,-325.38 94.36,-346.58 47.18,-367.78"/>
+<text xml:space="preserve" text-anchor="middle" x="47.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">Ejerce</text>
+</g>
+<!-- Propietario&#45;&#45;Ejerce -->
+<g id="edge45" class="edge">
+<title>Propietario--Ejerce</title>
+<path fill="none" stroke="black" d="M241.4,-419.84C194.85,-402.52 113.42,-372.23 72.36,-356.95"/>
+<text xml:space="preserve" text-anchor="middle" x="178.17" y="-388.78" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- NIT -->
+<g id="node17" class="node">
+<title>NIT</title>
+<ellipse fill="white" stroke="#6b7280" cx="141.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="start" x="132.32" y="-344.28" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">NIT</text>
+</g>
+<!-- Propietario&#45;&#45;NIT -->
+<g id="edge1" class="edge">
+<title>Propietario--NIT</title>
+<path fill="none" stroke="black" d="M248.53,-415.33C221.69,-398.39 181.74,-373.18 158.9,-358.77"/>
+</g>
+<!-- telefono -->
+<g id="node18" class="node">
+<title>telefono</title>
+<ellipse fill="white" stroke="#6b7280" cx="231.18" cy="-346.58" rx="38.99" ry="14.99"/>
+<ellipse fill="none" stroke="#6b7280" cx="231.18" cy="-346.58" rx="42.99" ry="18.99"/>
+<text xml:space="preserve" text-anchor="middle" x="231.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">telefono</text>
+</g>
+<!-- Propietario&#45;&#45;telefono -->
+<g id="edge2" class="edge">
+<title>Propietario--telefono</title>
+<path fill="none" stroke="black" d="M267.07,-415.54C259.37,-400.95 248.37,-380.13 240.58,-365.38"/>
+</g>
+<!-- CUI -->
+<g id="node19" class="node">
+<title>CUI</title>
+<ellipse fill="white" stroke="#6b7280" cx="321.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="321.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">CUI</text>
+</g>
+<!-- Propietario&#45;&#45;CUI -->
+<g id="edge3" class="edge">
+<title>Propietario--CUI</title>
+<path fill="none" stroke="black" d="M285.29,-415.54C293.71,-399.59 306.07,-376.19 313.87,-361.42"/>
+</g>
+<!-- nombre -->
+<g id="node20" class="node">
+<title>nombre</title>
+<ellipse fill="white" stroke="#6b7280" cx="405.18" cy="-346.58" rx="37.69" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="405.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">nombre</text>
+</g>
+<!-- Propietario&#45;&#45;nombre -->
+<g id="edge4" class="edge">
+<title>Propietario--nombre</title>
+<path fill="none" stroke="black" d="M302.6,-415.33C327.51,-398.88 364.24,-374.62 386.32,-360.04"/>
+</g>
+<!-- direccion -->
+<g id="node21" class="node">
+<title>direccion</title>
+<ellipse fill="white" stroke="#6b7280" cx="503.18" cy="-346.58" rx="42.44" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="503.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">direccion</text>
+</g>
+<!-- Propietario&#45;&#45;direccion -->
+<g id="edge5" class="edge">
+<title>Propietario--direccion</title>
+<path fill="none" stroke="black" d="M311,-420.19C346.57,-407.27 403.35,-386.46 452.18,-367.78 459.92,-364.82 468.29,-361.54 475.96,-358.5"/>
+</g>
+<!-- Vehiculo -->
+<g id="node2" class="node">
+<title>Vehiculo</title>
+<polygon fill="#bfdbfe" stroke="#1e3a8a" points="1749.28,-451.78 1691.08,-451.78 1691.08,-415.78 1749.28,-415.78 1749.28,-451.78"/>
+<text xml:space="preserve" text-anchor="middle" x="1720.18" y="-430.48" font-family="Helvetica,sans-Serif" font-size="11.00">Vehiculo</text>
+</g>
+<!-- Acredita -->
+<g id="node10" class="node">
+<title>Acredita</title>
+<polygon fill="#fde68a" stroke="#92400e" points="620.18,-367.78 563.83,-346.58 620.18,-325.38 676.53,-346.58 620.18,-367.78"/>
+<text xml:space="preserve" text-anchor="middle" x="620.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">Acredita</text>
+</g>
+<!-- Vehiculo&#45;&#45;Acredita -->
+<g id="edge47" class="edge">
+<title>Vehiculo--Acredita</title>
+<path fill="none" stroke="black" d="M1690.62,-432.32C1586.16,-430.52 1224.76,-422.76 927.62,-397.78 819.87,-388.72 791.93,-390.36 686.18,-367.78 673.76,-365.13 660.31,-361.21 648.81,-357.53"/>
+<text xml:space="preserve" text-anchor="middle" x="930.4" y="-388.78" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- Certifica -->
+<g id="node11" class="node">
+<title>Certifica</title>
+<polygon fill="#fde68a" stroke="#92400e" points="751.18,-367.78 694.84,-346.58 751.18,-325.38 807.52,-346.58 751.18,-367.78"/>
+<text xml:space="preserve" text-anchor="middle" x="751.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">Certifica</text>
+</g>
+<!-- Vehiculo&#45;&#45;Certifica -->
+<g id="edge49" class="edge">
+<title>Vehiculo--Certifica</title>
+<path fill="none" stroke="black" d="M1690.95,-433.29C1577.38,-434.74 1154.95,-435.02 816.18,-367.78 803.78,-365.32 790.39,-361.39 779,-357.64"/>
+<text xml:space="preserve" text-anchor="middle" x="989.89" y="-388.78" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- Tiene_Impuesto -->
+<g id="node12" class="node">
+<title>Tiene_Impuesto</title>
+<polygon fill="#fde68a" stroke="#92400e" points="920.18,-367.78 825.3,-346.58 920.18,-325.38 1015.06,-346.58 920.18,-367.78"/>
+<text xml:space="preserve" text-anchor="middle" x="920.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">Tiene_Impuesto</text>
+</g>
+<!-- Vehiculo&#45;&#45;Tiene_Impuesto -->
+<g id="edge51" class="edge">
+<title>Vehiculo--Tiene_Impuesto</title>
+<path fill="none" stroke="black" d="M1690.83,-431.44C1594.67,-426.76 1280.58,-409.11 1024.18,-367.78 1005.75,-364.81 985.58,-361.02 967.96,-357.53"/>
+<text xml:space="preserve" text-anchor="middle" x="1255.54" y="-388.78" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- Sometido_A -->
+<g id="node13" class="node">
+<title>Sometido_A</title>
+<polygon fill="#fde68a" stroke="#92400e" points="1109.18,-367.78 1033.25,-346.58 1109.18,-325.38 1185.1,-346.58 1109.18,-367.78"/>
+<text xml:space="preserve" text-anchor="middle" x="1109.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">Sometido_A</text>
+</g>
+<!-- Vehiculo&#45;&#45;Sometido_A -->
+<g id="edge53" class="edge">
+<title>Vehiculo--Sometido_A</title>
+<path fill="none" stroke="black" d="M1690.89,-431.52C1625.3,-428.41 1461.81,-419.01 1326.62,-397.78 1267,-388.42 1252.97,-381.43 1194.18,-367.78 1179.4,-364.35 1163.2,-360.52 1148.94,-357.12"/>
+<text xml:space="preserve" text-anchor="middle" x="1329.4" y="-388.78" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- Placa -->
+<g id="node26" class="node">
+<title>Placa</title>
+<ellipse fill="white" stroke="#6b7280" cx="1234.18" cy="-346.58" rx="30.77" ry="14.99"/>
+<text xml:space="preserve" text-anchor="start" x="1220.42" y="-344.28" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">Placa</text>
+</g>
+<!-- Vehiculo&#45;&#45;Placa -->
+<g id="edge10" class="edge">
+<title>Vehiculo--Placa</title>
+<path fill="none" stroke="black" d="M1690.83,-430.68C1634.82,-426.41 1508.93,-415.61 1404.18,-397.78 1345.72,-387.83 1329.94,-387.96 1274.18,-367.78 1267.3,-365.29 1260.08,-361.91 1253.7,-358.62"/>
+</g>
+<!-- uso -->
+<g id="node27" class="node">
+<title>uso</title>
+<ellipse fill="white" stroke="#6b7280" cx="1312.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1312.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">uso</text>
+</g>
+<!-- Vehiculo&#45;&#45;uso -->
+<g id="edge11" class="edge">
+<title>Vehiculo--uso</title>
+<path fill="none" stroke="black" d="M1690.95,-431.2C1627.19,-427 1471.63,-412.61 1350.18,-367.78 1343.45,-365.3 1336.42,-361.84 1330.27,-358.48"/>
+</g>
+<!-- tipo -->
+<g id="node28" class="node">
+<title>tipo</title>
+<ellipse fill="white" stroke="#6b7280" cx="1388.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1388.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">tipo</text>
+</g>
+<!-- Vehiculo&#45;&#45;tipo -->
+<g id="edge12" class="edge">
+<title>Vehiculo--tipo</title>
+<path fill="none" stroke="black" d="M1690.61,-429.03C1636.73,-421.58 1519.49,-402.57 1426.18,-367.78 1419.46,-365.28 1412.43,-361.81 1406.28,-358.45"/>
+</g>
+<!-- marca -->
+<g id="node29" class="node">
+<title>marca</title>
+<ellipse fill="white" stroke="#6b7280" cx="1468.18" cy="-346.58" rx="32.92" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1468.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">marca</text>
+</g>
+<!-- Vehiculo&#45;&#45;marca -->
+<g id="edge13" class="edge">
+<title>Vehiculo--marca</title>
+<path fill="none" stroke="black" d="M1690.84,-425.18C1649.81,-414.22 1573.23,-392.55 1510.18,-367.78 1503.25,-365.06 1495.88,-361.69 1489.27,-358.48"/>
+</g>
+<!-- linea -->
+<g id="node30" class="node">
+<title>linea</title>
+<ellipse fill="white" stroke="#6b7280" cx="1548.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1548.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">linea</text>
+</g>
+<!-- Vehiculo&#45;&#45;linea -->
+<g id="edge14" class="edge">
+<title>Vehiculo--linea</title>
+<path fill="none" stroke="black" d="M1690.75,-418.89C1663.5,-405.93 1621.91,-385.94 1586.18,-367.78 1580.05,-364.67 1573.42,-361.18 1567.44,-358"/>
+</g>
+<!-- modelo -->
+<g id="node31" class="node">
+<title>modelo</title>
+<ellipse fill="white" stroke="#6b7280" cx="1632.18" cy="-346.58" rx="36.82" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1632.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">modelo</text>
+</g>
+<!-- Vehiculo&#45;&#45;modelo -->
+<g id="edge15" class="edge">
+<title>Vehiculo--modelo</title>
+<path fill="none" stroke="black" d="M1702.37,-415.54C1685.7,-399.4 1661.13,-375.61 1645.92,-360.89"/>
+</g>
+<!-- chasis -->
+<g id="node32" class="node">
+<title>chasis</title>
+<ellipse fill="white" stroke="#6b7280" cx="1720.18" cy="-346.58" rx="33.36" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1720.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">chasis</text>
+</g>
+<!-- Vehiculo&#45;&#45;chasis -->
+<g id="edge16" class="edge">
+<title>Vehiculo--chasis</title>
+<path fill="none" stroke="black" d="M1720.18,-415.54C1720.18,-399.79 1720.18,-376.76 1720.18,-361.97"/>
+</g>
+<!-- vin -->
+<g id="node33" class="node">
+<title>vin</title>
+<ellipse fill="white" stroke="#6b7280" cx="1800.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1800.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">vin</text>
+</g>
+<!-- Vehiculo&#45;&#45;vin -->
+<g id="edge17" class="edge">
+<title>Vehiculo--vin</title>
+<path fill="none" stroke="black" d="M1736.37,-415.54C1751.62,-399.3 1774.13,-375.33 1787.93,-360.62"/>
+</g>
+<!-- serie -->
+<g id="node34" class="node">
+<title>serie</title>
+<ellipse fill="white" stroke="#6b7280" cx="1876.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1876.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">serie</text>
+</g>
+<!-- Vehiculo&#45;&#45;serie -->
+<g id="edge18" class="edge">
+<title>Vehiculo--serie</title>
+<path fill="none" stroke="black" d="M1749.52,-416.76C1780.94,-399.6 1829.9,-372.86 1856.82,-358.15"/>
+</g>
+<!-- motor -->
+<g id="node35" class="node">
+<title>motor</title>
+<ellipse fill="white" stroke="#6b7280" cx="1954.18" cy="-346.58" rx="31.2" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1954.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">motor</text>
+</g>
+<!-- Vehiculo&#45;&#45;motor -->
+<g id="edge19" class="edge">
+<title>Vehiculo--motor</title>
+<path fill="none" stroke="black" d="M1749.59,-424.38C1788.02,-413.06 1857.14,-391.59 1914.18,-367.78 1920.78,-365.02 1927.81,-361.64 1934.1,-358.44"/>
+</g>
+<!-- asientos -->
+<g id="node36" class="node">
+<title>asientos</title>
+<ellipse fill="white" stroke="#6b7280" cx="2043.18" cy="-346.58" rx="40.28" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2043.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">asientos</text>
+</g>
+<!-- Vehiculo&#45;&#45;asientos -->
+<g id="edge20" class="edge">
+<title>Vehiculo--asientos</title>
+<path fill="none" stroke="black" d="M1749.39,-427.43C1799.94,-417.82 1906.7,-395.99 1994.18,-367.78 2002.15,-365.21 2010.64,-361.92 2018.28,-358.74"/>
+</g>
+<!-- ejes -->
+<g id="node37" class="node">
+<title>ejes</title>
+<ellipse fill="white" stroke="#6b7280" cx="2130.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2130.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">ejes</text>
+</g>
+<!-- Vehiculo&#45;&#45;ejes -->
+<g id="edge21" class="edge">
+<title>Vehiculo--ejes</title>
+<path fill="none" stroke="black" d="M1749.43,-430.84C1813.26,-425.92 1969.15,-410.22 2092.18,-367.78 2098.96,-365.44 2106,-362.02 2112.15,-358.65"/>
+</g>
+<!-- cilindros -->
+<g id="node38" class="node">
+<title>cilindros</title>
+<ellipse fill="white" stroke="#6b7280" cx="2217.18" cy="-346.58" rx="39.84" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2217.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">cilindros</text>
+</g>
+<!-- Vehiculo&#45;&#45;cilindros -->
+<g id="edge22" class="edge">
+<title>Vehiculo--cilindros</title>
+<path fill="none" stroke="black" d="M1749.68,-431.6C1822.36,-428.04 2015.24,-414.56 2168.18,-367.78 2176.27,-365.31 2184.88,-362 2192.58,-358.78"/>
+</g>
+<!-- cc -->
+<g id="node39" class="node">
+<title>cc</title>
+<ellipse fill="white" stroke="#6b7280" cx="2304.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2304.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">cc</text>
+</g>
+<!-- Vehiculo&#45;&#45;cc -->
+<g id="edge23" class="edge">
+<title>Vehiculo--cc</title>
+<path fill="none" stroke="black" d="M1749.67,-430.66C1811.97,-426.04 1961.5,-414.11 2086.18,-397.78 2166.6,-387.25 2189.37,-393.82 2266.18,-367.78 2272.97,-365.48 2280.01,-362.06 2286.16,-358.69"/>
+</g>
+<!-- tonelaje -->
+<g id="node40" class="node">
+<title>tonelaje</title>
+<ellipse fill="white" stroke="#6b7280" cx="2389.18" cy="-346.58" rx="38.56" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2389.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">tonelaje</text>
+</g>
+<!-- Vehiculo&#45;&#45;tonelaje -->
+<g id="edge24" class="edge">
+<title>Vehiculo--tonelaje</title>
+<path fill="none" stroke="black" d="M1749.54,-431.22C1819.78,-427.31 2003.04,-416.08 2155.18,-397.78 2238.75,-387.73 2261.34,-391.25 2342.18,-367.78 2350.2,-365.45 2358.66,-362.11 2366.17,-358.82"/>
+</g>
+<!-- color -->
+<g id="node41" class="node">
+<title>color</title>
+<ellipse fill="white" stroke="#6b7280" cx="2474.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2474.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">color</text>
+</g>
+<!-- Vehiculo&#45;&#45;color -->
+<g id="edge25" class="edge">
+<title>Vehiculo--color</title>
+<path fill="none" stroke="black" d="M1749.72,-431.45C1827.42,-427.78 2043.83,-416.57 2223.18,-397.78 2318.7,-387.78 2346,-397.95 2437.18,-367.78 2443.85,-365.57 2450.72,-362.18 2456.7,-358.8"/>
+</g>
+<!-- estado_vehiculo -->
+<g id="node42" class="node">
+<title>estado_vehiculo</title>
+<ellipse fill="white" stroke="#6b7280" cx="2588.18" cy="-346.58" rx="67.53" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2588.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">estado_vehiculo</text>
+</g>
+<!-- Vehiculo&#45;&#45;estado_vehiculo -->
+<g id="edge26" class="edge">
+<title>Vehiculo--estado_vehiculo</title>
+<path fill="none" stroke="black" d="M1749.62,-431.93C1835.74,-429.25 2094.56,-419.8 2308.18,-397.78 2399.34,-388.38 2422.42,-386.25 2512.18,-367.78 2524.08,-365.33 2536.89,-362.15 2548.54,-359.03"/>
+</g>
+<!-- Propiedad -->
+<g id="node3" class="node">
+<title>Propiedad</title>
+<polygon fill="#bfdbfe" stroke="#1e3a8a" points="218.25,-277.38 152.1,-277.38 152.1,-241.38 218.25,-241.38 218.25,-277.38"/>
+<text xml:space="preserve" text-anchor="middle" x="185.18" y="-256.08" font-family="Helvetica,sans-Serif" font-size="11.00">Propiedad</text>
+</g>
+<!-- id_propiedad -->
+<g id="node43" class="node">
+<title>id_propiedad</title>
+<ellipse fill="white" stroke="#6b7280" cx="58.18" cy="-172.18" rx="56.29" ry="14.99"/>
+<text xml:space="preserve" text-anchor="start" x="26.37" y="-169.88" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">id_propiedad</text>
+</g>
+<!-- Propiedad&#45;&#45;id_propiedad -->
+<g id="edge27" class="edge">
+<title>Propiedad--id_propiedad</title>
+<path fill="none" stroke="black" d="M159.17,-240.93C135.08,-224.77 99.77,-201.08 77.92,-186.42"/>
+</g>
+<!-- fecha_inicio -->
+<g id="node44" class="node">
+<title>fecha_inicio</title>
+<ellipse fill="white" stroke="#6b7280" cx="185.18" cy="-172.18" rx="52.39" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="185.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">fecha_inicio</text>
+</g>
+<!-- Propiedad&#45;&#45;fecha_inicio -->
+<g id="edge28" class="edge">
+<title>Propiedad--fecha_inicio</title>
+<path fill="none" stroke="black" d="M185.18,-241.14C185.18,-225.39 185.18,-202.36 185.18,-187.57"/>
+</g>
+<!-- fecha_fin -->
+<g id="node45" class="node">
+<title>fecha_fin</title>
+<ellipse fill="white" stroke="#6b7280" cx="298.18" cy="-172.18" rx="42.88" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="298.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">fecha_fin</text>
+</g>
+<!-- Propiedad&#45;&#45;fecha_fin -->
+<g id="edge29" class="edge">
+<title>Propiedad--fecha_fin</title>
+<path fill="none" stroke="black" d="M208.32,-240.93C229.89,-224.67 261.55,-200.8 280.97,-186.16"/>
+</g>
+<!-- Tarjeta_Circulacion -->
+<g id="node4" class="node">
+<title>Tarjeta_Circulacion</title>
+<polygon fill="#bfdbfe" stroke="#1e3a8a" points="771.56,-277.38 660.8,-277.38 660.8,-241.38 771.56,-241.38 771.56,-277.38"/>
+<text xml:space="preserve" text-anchor="middle" x="716.18" y="-256.08" font-family="Helvetica,sans-Serif" font-size="11.00">Tarjeta_Circulacion</text>
+</g>
+<!-- No_Tarjeta -->
+<g id="node46" class="node">
+<title>No_Tarjeta</title>
+<ellipse fill="white" stroke="#6b7280" cx="420.18" cy="-172.18" rx="49.79" ry="14.99"/>
+<text xml:space="preserve" text-anchor="start" x="392.97" y="-169.88" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">No_Tarjeta</text>
+</g>
+<!-- Tarjeta_Circulacion&#45;&#45;No_Tarjeta -->
+<g id="edge30" class="edge">
+<title>Tarjeta_Circulacion--No_Tarjeta</title>
+<path fill="none" stroke="black" d="M660.35,-244.12C612.14,-231.55 540.75,-212.34 479.18,-193.38 470.07,-190.58 460.26,-187.31 451.29,-184.24"/>
+</g>
+<!-- Fecha_Emision -->
+<g id="node47" class="node">
+<title>Fecha_Emision</title>
+<ellipse fill="white" stroke="#6b7280" cx="553.18" cy="-172.18" rx="64.92" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="553.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">Fecha_Emision</text>
+</g>
+<!-- Tarjeta_Circulacion&#45;&#45;Fecha_Emision -->
+<g id="edge31" class="edge">
+<title>Tarjeta_Circulacion--Fecha_Emision</title>
+<path fill="none" stroke="black" d="M682.8,-240.93C651.88,-224.77 606.56,-201.08 578.51,-186.42"/>
+</g>
+<!-- Fecha_Vencimiento -->
+<g id="node48" class="node">
+<title>Fecha_Vencimiento</title>
+<ellipse fill="white" stroke="#6b7280" cx="716.18" cy="-172.18" rx="80.06" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="716.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">Fecha_Vencimiento</text>
+</g>
+<!-- Tarjeta_Circulacion&#45;&#45;Fecha_Vencimiento -->
+<g id="edge32" class="edge">
+<title>Tarjeta_Circulacion--Fecha_Vencimiento</title>
+<path fill="none" stroke="black" d="M716.18,-241.14C716.18,-225.39 716.18,-202.36 716.18,-187.57"/>
+</g>
+<!-- Estado_Tarjeta -->
+<g id="node49" class="node">
+<title>Estado_Tarjeta</title>
+<ellipse fill="white" stroke="#6b7280" cx="878.18" cy="-172.18" rx="64.06" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="878.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">Estado_Tarjeta</text>
+</g>
+<!-- Tarjeta_Circulacion&#45;&#45;Estado_Tarjeta -->
+<g id="edge33" class="edge">
+<title>Tarjeta_Circulacion--Estado_Tarjeta</title>
+<path fill="none" stroke="black" d="M749.35,-240.93C780.09,-224.77 825.13,-201.08 853,-186.42"/>
+</g>
+<!-- Calcomania -->
+<g id="node5" class="node">
+<title>Calcomania</title>
+<polygon fill="#bfdbfe" stroke="#1e3a8a" points="1242.22,-277.38 1168.14,-277.38 1168.14,-241.38 1242.22,-241.38 1242.22,-277.38"/>
+<text xml:space="preserve" text-anchor="middle" x="1205.18" y="-256.08" font-family="Helvetica,sans-Serif" font-size="11.00">Calcomania</text>
+</g>
+<!-- Cancela_Con -->
+<g id="node16" class="node">
+<title>Cancela_Con</title>
+<polygon fill="#fde68a" stroke="#92400e" points="1043.18,-193.38 960.52,-172.18 1043.18,-150.98 1125.83,-172.18 1043.18,-193.38"/>
+<text xml:space="preserve" text-anchor="middle" x="1043.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">Cancela_Con</text>
+</g>
+<!-- Calcomania&#45;&#45;Cancela_Con -->
+<g id="edge59" class="edge">
+<title>Calcomania--Cancela_Con</title>
+<path fill="none" stroke="black" d="M1172.01,-240.93C1141.74,-225.01 1097.58,-201.79 1069.63,-187.09"/>
+<text xml:space="preserve" text-anchor="middle" x="1136.66" y="-214.38" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- id_calcomania -->
+<g id="node50" class="node">
+<title>id_calcomania</title>
+<ellipse fill="white" stroke="#6b7280" cx="1205.18" cy="-172.18" rx="61.04" ry="14.99"/>
+<text xml:space="preserve" text-anchor="start" x="1170.02" y="-169.88" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">id_calcomania</text>
+</g>
+<!-- Calcomania&#45;&#45;id_calcomania -->
+<g id="edge34" class="edge">
+<title>Calcomania--id_calcomania</title>
+<path fill="none" stroke="black" d="M1205.18,-241.14C1205.18,-225.39 1205.18,-202.36 1205.18,-187.57"/>
+</g>
+<!-- anio_impuesto -->
+<g id="node51" class="node">
+<title>anio_impuesto</title>
+<ellipse fill="white" stroke="#6b7280" cx="1346.18" cy="-172.18" rx="61.91" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1346.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">anio_impuesto</text>
+</g>
+<!-- Calcomania&#45;&#45;anio_impuesto -->
+<g id="edge35" class="edge">
+<title>Calcomania--anio_impuesto</title>
+<path fill="none" stroke="black" d="M1234.05,-240.93C1260.8,-224.77 1300.01,-201.08 1324.27,-186.42"/>
+</g>
+<!-- monto_base -->
+<g id="node52" class="node">
+<title>monto_base</title>
+<ellipse fill="white" stroke="#6b7280" cx="1480.18" cy="-172.18" rx="54.12" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1480.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">monto_base</text>
+</g>
+<!-- Calcomania&#45;&#45;monto_base -->
+<g id="edge36" class="edge">
+<title>Calcomania--monto_base</title>
+<path fill="none" stroke="black" d="M1242.37,-247.14C1284.74,-234.29 1356.02,-212.56 1417.18,-193.38 1426.6,-190.43 1436.81,-187.18 1446.2,-184.16"/>
+</g>
+<!-- Tramite -->
+<g id="node6" class="node">
+<title>Tramite</title>
+<polygon fill="#bfdbfe" stroke="#1e3a8a" points="1913.18,-277.38 1859.18,-277.38 1859.18,-241.38 1913.18,-241.38 1913.18,-277.38"/>
+<text xml:space="preserve" text-anchor="middle" x="1886.18" y="-256.08" font-family="Helvetica,sans-Serif" font-size="11.00">Tramite</text>
+</g>
+<!-- Liquida_Con -->
+<g id="node15" class="node">
+<title>Liquida_Con</title>
+<polygon fill="#fde68a" stroke="#92400e" points="1630.18,-193.38 1552.41,-172.18 1630.18,-150.98 1707.95,-172.18 1630.18,-193.38"/>
+<text xml:space="preserve" text-anchor="middle" x="1630.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">Liquida_Con</text>
+</g>
+<!-- Tramite&#45;&#45;Liquida_Con -->
+<g id="edge57" class="edge">
+<title>Tramite--Liquida_Con</title>
+<path fill="none" stroke="black" d="M1858.78,-249.26C1811.7,-233.59 1715.57,-201.6 1664.25,-184.52"/>
+<text xml:space="preserve" text-anchor="middle" x="1776.29" y="-214.38" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- id_tramite -->
+<g id="node53" class="node">
+<title>id_tramite</title>
+<ellipse fill="white" stroke="#6b7280" cx="1771.18" cy="-172.18" rx="45.46" ry="14.99"/>
+<text xml:space="preserve" text-anchor="start" x="1747.03" y="-169.88" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">id_tramite</text>
+</g>
+<!-- Tramite&#45;&#45;id_tramite -->
+<g id="edge37" class="edge">
+<title>Tramite--id_tramite</title>
+<path fill="none" stroke="black" d="M1862.63,-240.93C1840.81,-224.77 1808.84,-201.08 1789.05,-186.42"/>
+</g>
+<!-- tipo_tramite -->
+<g id="node54" class="node">
+<title>tipo_tramite</title>
+<ellipse fill="white" stroke="#6b7280" cx="1886.18" cy="-172.18" rx="51.95" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1886.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">tipo_tramite</text>
+</g>
+<!-- Tramite&#45;&#45;tipo_tramite -->
+<g id="edge38" class="edge">
+<title>Tramite--tipo_tramite</title>
+<path fill="none" stroke="black" d="M1886.18,-241.14C1886.18,-225.39 1886.18,-202.36 1886.18,-187.57"/>
+</g>
+<!-- fecha_tramite -->
+<g id="node55" class="node">
+<title>fecha_tramite</title>
+<ellipse fill="white" stroke="#6b7280" cx="2014.18" cy="-172.18" rx="58.44" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2014.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">fecha_tramite</text>
+</g>
+<!-- Tramite&#45;&#45;fecha_tramite -->
+<g id="edge39" class="edge">
+<title>Tramite--fecha_tramite</title>
+<path fill="none" stroke="black" d="M1912.39,-240.93C1936.53,-224.87 1971.84,-201.37 1993.89,-186.69"/>
+</g>
+<!-- descripcion_tramite -->
+<g id="node56" class="node">
+<title>descripcion_tramite</title>
+<ellipse fill="white" stroke="#6b7280" cx="2169.18" cy="-172.18" rx="78.75" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2169.18" y="-168.88" font-family="Helvetica,sans-Serif" font-size="11.00">descripcion_tramite</text>
+</g>
+<!-- Tramite&#45;&#45;descripcion_tramite -->
+<g id="edge40" class="edge">
+<title>Tramite--descripcion_tramite</title>
+<path fill="none" stroke="black" d="M1913.57,-250.13C1963.65,-235.06 2070.18,-202.99 2128.66,-185.38"/>
+</g>
+<!-- Pago -->
+<g id="node7" class="node">
+<title>Pago</title>
+<polygon fill="#bfdbfe" stroke="#1e3a8a" points="1363.18,-102.98 1309.18,-102.98 1309.18,-66.98 1363.18,-66.98 1363.18,-102.98"/>
+<text xml:space="preserve" text-anchor="middle" x="1336.18" y="-81.68" font-family="Helvetica,sans-Serif" font-size="11.00">Pago</text>
+</g>
+<!-- id_pago -->
+<g id="node57" class="node">
+<title>id_pago</title>
+<ellipse fill="white" stroke="#6b7280" cx="1166.18" cy="-14.99" rx="39" ry="14.99"/>
+<text xml:space="preserve" text-anchor="start" x="1146.6" y="-12.69" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">id_pago</text>
+</g>
+<!-- Pago&#45;&#45;id_pago -->
+<g id="edge41" class="edge">
+<title>Pago--id_pago</title>
+<path fill="none" stroke="black" d="M1308.87,-73.06C1276.77,-60.22 1223.89,-39.07 1192.31,-26.44"/>
+</g>
+<!-- monto_total -->
+<g id="node58" class="node">
+<title>monto_total</title>
+<ellipse fill="white" stroke="#6b7280" cx="1275.18" cy="-14.99" rx="51.96" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1275.18" y="-11.69" font-family="Helvetica,sans-Serif" font-size="11.00">monto_total</text>
+</g>
+<!-- Pago&#45;&#45;monto_total -->
+<g id="edge42" class="edge">
+<title>Pago--monto_total</title>
+<path fill="none" stroke="black" d="M1320.79,-66.82C1310.48,-55.34 1297.1,-40.42 1287.5,-29.72"/>
+</g>
+<!-- fecha_pago -->
+<g id="node59" class="node">
+<title>fecha_pago</title>
+<ellipse fill="white" stroke="#6b7280" cx="1397.18" cy="-14.99" rx="51.97" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1397.18" y="-11.69" font-family="Helvetica,sans-Serif" font-size="11.00">fecha_pago</text>
+</g>
+<!-- Pago&#45;&#45;fecha_pago -->
+<g id="edge43" class="edge">
+<title>Pago--fecha_pago</title>
+<path fill="none" stroke="black" d="M1351.57,-66.82C1361.88,-55.34 1375.26,-40.42 1384.86,-29.72"/>
+</g>
+<!-- estado_pago -->
+<g id="node60" class="node">
+<title>estado_pago</title>
+<ellipse fill="white" stroke="#6b7280" cx="1523.18" cy="-14.99" rx="56.3" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="1523.18" y="-11.69" font-family="Helvetica,sans-Serif" font-size="11.00">estado_pago</text>
+</g>
+<!-- Pago&#45;&#45;estado_pago -->
+<g id="edge44" class="edge">
+<title>Pago--estado_pago</title>
+<path fill="none" stroke="black" d="M1363.37,-74.09C1397.2,-61.79 1454.9,-40.82 1490.93,-27.72"/>
+</g>
+<!-- Usuario -->
+<g id="node8" class="node">
+<title>Usuario</title>
+<polygon fill="#bfdbfe" stroke="#1e3a8a" points="3012.18,-451.78 2958.18,-451.78 2958.18,-415.78 3012.18,-415.78 3012.18,-451.78"/>
+<text xml:space="preserve" text-anchor="middle" x="2985.18" y="-430.48" font-family="Helvetica,sans-Serif" font-size="11.00">Usuario</text>
+</g>
+<!-- Autoriza -->
+<g id="node14" class="node">
+<title>Autoriza</title>
+<polygon fill="#fde68a" stroke="#92400e" points="2730.18,-367.78 2673.83,-346.58 2730.18,-325.38 2786.53,-346.58 2730.18,-367.78"/>
+<text xml:space="preserve" text-anchor="middle" x="2730.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">Autoriza</text>
+</g>
+<!-- Usuario&#45;&#45;Autoriza -->
+<g id="edge55" class="edge">
+<title>Usuario--Autoriza</title>
+<path fill="none" stroke="black" d="M2957.89,-423.66C2909.45,-407.48 2808.89,-373.88 2759.22,-357.28"/>
+<text xml:space="preserve" text-anchor="middle" x="2875.73" y="-388.78" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- id_usuario -->
+<g id="node22" class="node">
+<title>id_usuario</title>
+<ellipse fill="white" stroke="#6b7280" cx="2852.18" cy="-346.58" rx="47.2" ry="14.99"/>
+<text xml:space="preserve" text-anchor="start" x="2826.8" y="-344.28" font-family="Helvetica,sans-Serif" text-decoration="underline" font-size="11.00">id_usuario</text>
+</g>
+<!-- Usuario&#45;&#45;id_usuario -->
+<g id="edge6" class="edge">
+<title>Usuario--id_usuario</title>
+<path fill="none" stroke="black" d="M2957.94,-415.33C2932.56,-399.07 2895.29,-375.2 2872.44,-360.56"/>
+</g>
+<!-- nombre_usuario -->
+<g id="node23" class="node">
+<title>nombre_usuario</title>
+<ellipse fill="white" stroke="#6b7280" cx="2985.18" cy="-346.58" rx="67.52" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="2985.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">nombre_usuario</text>
+</g>
+<!-- Usuario&#45;&#45;nombre_usuario -->
+<g id="edge7" class="edge">
+<title>Usuario--nombre_usuario</title>
+<path fill="none" stroke="black" d="M2985.18,-415.54C2985.18,-399.79 2985.18,-376.76 2985.18,-361.97"/>
+</g>
+<!-- password_hash -->
+<g id="node24" class="node">
+<title>password_hash</title>
+<ellipse fill="white" stroke="#6b7280" cx="3136.18" cy="-346.58" rx="65.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="3136.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">password_hash</text>
+</g>
+<!-- Usuario&#45;&#45;password_hash -->
+<g id="edge8" class="edge">
+<title>Usuario--password_hash</title>
+<path fill="none" stroke="black" d="M3012.52,-417.35C3041.08,-401.24 3085.41,-376.23 3112.51,-360.93"/>
+</g>
+<!-- rol -->
+<g id="node25" class="node">
+<title>rol</title>
+<ellipse fill="white" stroke="#6b7280" cx="3249.18" cy="-346.58" rx="28.8" ry="14.99"/>
+<text xml:space="preserve" text-anchor="middle" x="3249.18" y="-343.28" font-family="Helvetica,sans-Serif" font-size="11.00">rol</text>
+</g>
+<!-- Usuario&#45;&#45;rol -->
+<g id="edge9" class="edge">
+<title>Usuario--rol</title>
+<path fill="none" stroke="black" d="M3012.58,-426.85C3055.72,-417.09 3141.73,-395.87 3211.18,-367.78 3217.69,-365.15 3224.54,-361.73 3230.61,-358.45"/>
+</g>
+<!-- Ejerce&#45;&#45;Propiedad -->
+<g id="edge46" class="edge">
+<title>Ejerce--Propiedad</title>
+<path fill="none" stroke="black" d="M66.37,-333.73C89.92,-319.19 130.05,-294.42 157.08,-277.73"/>
+<text xml:space="preserve" text-anchor="middle" x="128.05" y="-298.38" font-family="Helvetica,sans-Serif" font-size="10.00">N</text>
+</g>
+<!-- Acredita&#45;&#45;Propiedad -->
+<g id="edge48" class="edge">
+<title>Acredita--Propiedad</title>
+<path fill="none" stroke="black" d="M591.15,-335.85C579.71,-332.25 566.41,-328.32 554.18,-325.38 431.79,-295.99 283.6,-273.89 218.54,-264.86"/>
+<text xml:space="preserve" text-anchor="middle" x="467.43" y="-298.38" font-family="Helvetica,sans-Serif" font-size="10.00">N</text>
+</g>
+<!-- Certifica&#45;&#45;Tarjeta_Circulacion -->
+<g id="edge50" class="edge">
+<title>Certifica--Tarjeta_Circulacion</title>
+<path fill="none" stroke="black" d="M743.93,-327.93C737.88,-313.21 729.31,-292.35 723.3,-277.72"/>
+<text xml:space="preserve" text-anchor="middle" x="738.34" y="-298.38" font-family="Helvetica,sans-Serif" font-size="10.00">N</text>
+</g>
+<!-- Tiene_Impuesto&#45;&#45;Calcomania -->
+<g id="edge52" class="edge">
+<title>Tiene_Impuesto--Calcomania</title>
+<path fill="none" stroke="black" d="M959.81,-333.73C1014.87,-317.27 1113.81,-287.7 1167.7,-271.59"/>
+<text xml:space="preserve" text-anchor="middle" x="1083.35" y="-298.38" font-family="Helvetica,sans-Serif" font-size="10.00">N</text>
+</g>
+<!-- Sometido_A&#45;&#45;Tramite -->
+<g id="edge54" class="edge">
+<title>Sometido_A--Tramite</title>
+<path fill="none" stroke="black" d="M1146.61,-335.49C1161.34,-331.84 1178.47,-327.97 1194.18,-325.38 1450.75,-283.06 1765.73,-265.93 1858.97,-261.57"/>
+<text xml:space="preserve" text-anchor="middle" x="1405.92" y="-298.38" font-family="Helvetica,sans-Serif" font-size="10.00">N</text>
+</g>
+<!-- Autoriza&#45;&#45;Tramite -->
+<g id="edge56" class="edge">
+<title>Autoriza--Tramite</title>
+<path fill="none" stroke="black" d="M2702.37,-335.47C2690.98,-331.72 2677.59,-327.8 2665.18,-325.38 2374.78,-268.85 2014.07,-261.46 1913.38,-260.52"/>
+<text xml:space="preserve" text-anchor="middle" x="2542.76" y="-298.38" font-family="Helvetica,sans-Serif" font-size="10.00">N</text>
+</g>
+<!-- Liquida_Con&#45;&#45;Pago -->
+<g id="edge58" class="edge">
+<title>Liquida_Con--Pago</title>
+<path fill="none" stroke="black" d="M1593.54,-160.56C1533.81,-143.26 1416.81,-109.35 1363.64,-93.94"/>
+<text xml:space="preserve" text-anchor="middle" x="1494.78" y="-123.98" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+<!-- Cancela_Con&#45;&#45;Pago -->
+<g id="edge60" class="edge">
+<title>Cancela_Con--Pago</title>
+<path fill="none" stroke="black" d="M1080.88,-160.22C1140.85,-142.78 1256.54,-109.14 1309.06,-93.87"/>
+<text xml:space="preserve" text-anchor="middle" x="1210" y="-123.98" font-family="Helvetica,sans-Serif" font-size="10.00">1</text>
+</g>
+</g>
+</svg>

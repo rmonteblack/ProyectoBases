@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT - Sistema de Control Vehicular</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen">
+
+    <nav class="bg-[#1e3a8a] p-4 shadow-xl border-b border-blue-900">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-white text-[#1e3a8a] font-black px-3 py-1.5 rounded text-xl tracking-wider shadow-md">SAT</div>
+                <h1 class="text-md sm:text-lg font-bold tracking-tight text-white">Superintendencia de Administración Tributaria</h1>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto mt-8 p-4 max-w-2xl">
+        
+        <div class="bg-white rounded-xl shadow-2xl overflow-hidden text-slate-800 border border-slate-200">
+            <div class="bg-[#15487e] text-white p-4 text-center font-bold text-lg tracking-wide">
+                ¿Cuántos vehículos desea consultar?
+            </div>
+            
+            <div class="p-6 space-y-6">
+                <div class="space-y-4">
+                    <label class="flex items-start gap-3 cursor-pointer p-2 rounded hover:bg-slate-50 transition">
+                        <input type="radio" name="tipoConsulta" value="opcion1" checked onchange="alternarCampos()"
+                               class="mt-1 h-4 w-4 text-blue-600 border-slate-300 focus:ring-blue-500">
+                        <div>
+                            <span class="font-bold text-slate-900 block">Uno</span>
+                            <span class="text-xs text-slate-500">(Elija el prefijo, escriba el número de la placa actual e ingrese el CUI o NIT)</span>
+                        </div>
+                    </label>
+
+                    <label class="flex items-start gap-3 cursor-pointer p-2 rounded hover:bg-slate-50 transition">
+                        <input type="radio" name="tipoConsulta" value="opcion2" onchange="alternarCampos()"
+                               class="mt-1 h-4 w-4 text-blue-600 border-slate-300 focus:ring-blue-500">
+                        <div>
+                            <span class="font-bold text-slate-900 block">Uno</span>
+                            <span class="text-xs text-slate-500">(Deberá ingresar el VIN)</span>
+                        </div>
+                    </label>
+
+                    <label class="flex items-start gap-3 cursor-pointer p-2 rounded hover:bg-slate-50 transition">
+                        <input type="radio" name="tipoConsulta" value="opcion3" onchange="alternarCampos()"
+                               class="mt-1 h-4 w-4 text-blue-600 border-slate-300 focus:ring-blue-500">
+                        <div>
+                            <span class="font-bold text-slate-900 block">Dos o más</span>
+                            <span class="text-xs text-slate-500">(Elija el prefijo, ingrese la placa de cualquiera de ellos, el número de tarjeta de circulación y el CUI o NIT)</span>
+                        </div>
+                    </label>
+                </div>
+
+                <hr class="border-slate-200">
+
+                <div class="space-y-4">
+                    
+                    <div id="grupoPlaca" class="grid grid-cols-3 gap-3">
+                        <div class="col-span-1">
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Placa:</label>
+                            <select id="prefijoPlaca" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2 text-sm font-bold text-slate-800 focus:outline-none focus:border-blue-500">
+                                <option value="P">P (Particular)</option>
+                                <option value="M">M (Motocicleta)</option>
+                                <option value="C">C (Comercial)</option>
+                                <option value="A">A (Agrícola)</option>
+                            </select>
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">&nbsp;</label>
+                            <input type="text" id="numPlaca" placeholder="018BYP" 
+                                   class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2 text-sm font-mono tracking-widest uppercase focus:outline-none focus:border-blue-500">
+                        </div>
+                    </div>
+
+                    <div id="grupoTarjeta" class="hidden">
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Tarjeta de Circulación:</label>
+                        <input type="text" id="numTarjeta" placeholder="Número de documento SAT-4101" 
+                               class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+                    </div>
+
+                    <div id="grupoPropietario" class="grid grid-cols-3 gap-3">
+                        <div class="col-span-1">
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Propietario:</label>
+                            <select id="tipoDoc" class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2 text-sm font-bold text-slate-800 focus:outline-none focus:border-blue-500">
+                                <option value="NIT">NIT</option>
+                                <option value="CUI">CUI</option>
+                            </select>
+                        </div>
+                        <div class="col-span-2">
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">&nbsp;</label>
+                            <input type="text" id="idPropietario" placeholder="Ingrese el número de documento" 
+                                   class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+                        </div>
+                    </div>
+
+                    <div id="grupoVIN" class="hidden">
+                        <label class="block text-xs font-bold text-slate-700 uppercase mb-1">VIN:</label>
+                        <input type="text" id="inputVIN" placeholder="Ingrese el código VIN completo" 
+                               class="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2 text-sm font-mono tracking-wider uppercase focus:outline-none focus:border-blue-500">
+                    </div>
+
+                </div>
+
+                <div class="pt-4 flex justify-center">
+                    <button onclick="procesarConsulta()" 
+                            class="bg-[#15487e] hover:bg-[#1e5a9c] text-white font-black px-12 py-3 rounded shadow-md tracking-wider uppercase text-sm transition-transform active:scale-95">
+                        CONSULTAR
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="mt-8 text-center hidden">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 border-4 border-blue-500 border-t-transparent"></div>
+            <p class="text-slate-400 text-sm mt-2 font-mono">Verificando en el Registro de la Propiedad Mueble...</p>
+        </div>
+
+        <div id="resultado" class="mt-8 hidden"></div>
+
+    </main>
+
+    <script>
+        const SUPABASE_URL = 'https://iofegzdfyqqtelpvukfn.supabase.co'; 
+        const SUPABASE_ANON_KEY = 'sb_publishable_I7HusjG-EN7R-KXl2xACRw_UXsXtDP3';
+        
+        const db = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+        function alternarCampos() {
+            const opcionSeleccionada = document.querySelector('input[name="tipoConsulta"]:checked').value;
+            
+            document.getElementById('grupoPlaca').classList.toggle('hidden', opcionSeleccionada === 'opcion2');
+            document.getElementById('grupoPropietario').classList.toggle('hidden', opcionSeleccionada === 'opcion2');
+            document.getElementById('grupoTarjeta').classList.toggle('hidden', opcionSeleccionada !== 'opcion3');
+            document.getElementById('grupoVIN').classList.toggle('hidden', opcionSeleccionada !== 'opcion2');
+        }
+
+        async function procesarConsulta() {
+            const opcion = document.querySelector('input[name="tipoConsulta"]:checked').value;
+            const resContainer = document.getElementById('resultado');
+            const loader = document.getElementById('loading');
+
+            loader.classList.remove('hidden');
+            resContainer.classList.add('hidden');
+
+            let vehiculoEncontrado = null;
+
+            try {
+                if (opcion === 'opcion1') {
+                    const placaCompleta = document.getElementById('prefijoPlaca').value + document.getElementById('numPlaca').value.toUpperCase().trim();
+                    const docTipo = document.getElementById('tipoDoc').value;
+                    const docValor = document.getElementById('idPropietario').value.trim();
+
+                    let propietarioQuery = db.from('propietario').select('nit');
+                    if(docTipo === 'CUI') propietarioQuery = propietarioQuery.eq('cui', docValor);
+                    else propietarioQuery = propietarioQuery.eq('nit', docValor);
+
+                    const { data: prop, error: propErr } = await propietarioQuery.single();
+                    if (propErr || !prop) throw new Error('Documento de identificación de propietario no registrado.');
+
+                    const { data: historial, error: histErr } = await db
+                        .from('propiedad')
+                        .select('placa_vehiculo')
+                        .eq('nit_propietario', prop.nit)
+                        .eq('placa_vehiculo', placaCompleta)
+                        .is('fecha_fin', null)
+                        .single();
+
+                    if (histErr || !historial) throw new Error('El vehículo no se encuentra asociado a este propietario actualmente.');
+
+                    const { data: v, error: vErr } = await db.from('vehiculo').select('*').eq('placa', placaCompleta).single();
+                    if (vErr) throw vErr;
+                    vehiculoEncontrado = v;
+
+                } else if (opcion === 'opcion2') {
+                    const vinInput = document.getElementById('inputVIN').value.toUpperCase().trim();
+                    const { data: v, error: vErr } = await db.from('vehiculo').select('*').eq('vin', vinInput).single();
+                    if (vErr) throw vErr;
+                    vehiculoEncontrado = v;
+
+                } else if (opcion === 'opcion3') {
+                    const placaCompleta = document.getElementById('prefijoPlaca').value + document.getElementById('numPlaca').value.toUpperCase().trim();
+                    const tarjetaInput = document.getElementById('numTarjeta').value.trim();
+                    const docTipo = document.getElementById('tipoDoc').value;
+                    const docValor = document.getElementById('idPropietario').value.trim();
+
+                    let propietarioQuery = db.from('propietario').select('nit');
+                    if(docTipo === 'CUI') propietarioQuery = propietarioQuery.eq('cui', docValor);
+                    else propietarioQuery = propietarioQuery.eq('nit', docValor);
+                    const { data: prop } = await propietarioQuery.single();
+                    if (!prop) throw new Error('Propietario no encontrado.');
+
+                    const { data: tarjeta, error: tjErr } = await db
+                        .from('tarjeta_circulacion')
+                        .select('placa_vehiculo')
+                        .eq('no_tarjeta', tarjetaInput)
+                        .eq('placa_vehiculo', placaCompleta)
+                        .eq('estado_tarjeta', 'vigente')
+                        .single();
+
+                    if (tjErr || !tarjeta) throw new Error('La tarjeta de circulación ingresada no es válida o se encuentra vencida.');
+
+                    const { data: v } = await db.from('vehiculo').select('*').eq('placa', placaCompleta).single();
+                    vehiculoEncontrado = v;
+                }
+
+                if (!vehiculoEncontrado) throw new Error('No se encontraron registros activos para los parámetros especificados.');
+                renderizarTarjeta(vehiculoEncontrado);
+
+            } catch (err) {
+                console.error(err);
+                resContainer.innerHTML = `
+                    <div class="bg-red-900/20 border border-red-500/40 text-red-400 p-4 rounded-xl font-medium text-sm flex items-center gap-3">
+                        <span>⚠️</span>
+                        <span>Validación del Sistema: ${err.message || 'Verifique los datos ingresados.'}</span>
+                    </div>`;
+                resContainer.classList.remove('hidden');
+            } finally {
+                loader.classList.add('hidden');
+            }
+        }
+
+        function renderizarTarjeta(vehiculo) {
+            const resContainer = document.getElementById('resultado');
+            resContainer.innerHTML = `
+                <div class="bg-slate-50 text-slate-900 rounded-xl shadow-2xl overflow-hidden border-2 border-slate-300">
+                    <div class="bg-gradient-to-r from-slate-200 to-slate-300 p-4 border-b border-slate-400 flex justify-between items-center">
+                        <div>
+                            <h3 class="text-sm font-black text-slate-700 tracking-wider uppercase">República de Guatemala</h3>
+                            <h4 class="text-xs font-bold text-slate-500">Tarjeta de Circulación Electrónica SAT-4101</h4>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-xs font-bold text-slate-500 block">PLACA</span>
+                            <span class="font-mono text-lg font-black tracking-wider text-blue-900">${vehiculo.placa}</span>
+                        </div>
+                    </div>
+
+                    <div class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 gap-x-6 text-sm border-b border-slate-200 bg-white">
+                        <div><span class="text-xs font-bold text-slate-400 block uppercase">Uso:</span> <span class="font-medium text-slate-800">${vehiculo.uso}</span></div>
+                        <div><span class="text-xs font-bold text-slate-400 block uppercase">Tipo:</span> <span class="font-medium text-slate-800">${vehiculo.tipo}</span></div>
+                        <div><span class="text-xs font-bold text-slate-400 block uppercase">Marca:</span> <span class="font-medium text-slate-800">${vehiculo.marca}</span></div>
+                        <div><span class="text-xs font-bold text-slate-400 block uppercase">Línea:</span> <span class="font-medium text-slate-800">${vehiculo.linea}</span></div>
+                        <div><span class="text-xs font-bold text-slate-400 block uppercase">Modelo (Año):</span> <span class="font-mono font-medium text-slate-800">${vehiculo.modelo}</span></div>
+                        <div><span class="text-xs font-bold text-slate-400 block uppercase">Color:</span> <span class="font-medium text-slate-800">${vehiculo.color}</span></div>
+                        <div class="sm:col-span-2 md:col-span-1"><span class="text-xs font-bold text-slate-400 block uppercase">Motor:</span> <span class="font-mono text-slate-800">${vehiculo.motor}</span></div>
+                        <div class="sm:col-span-2 md:col-span-1"><span class="text-xs font-bold text-slate-400 block uppercase">Chasis:</span> <span class="font-mono text-slate-800">${vehiculo.chasis}</span></div>
+                        <div class="sm:col-span-2 md:col-span-1"><span class="text-xs font-bold text-slate-400 block uppercase">VIN:</span> <span class="font-mono text-slate-800">${vehiculo.vin}</span></div>
+                    </div>
+
+                    <div class="p-4 bg-slate-50 grid grid-cols-2 sm:grid-cols-5 gap-4 text-center text-xs border-b border-slate-200">
+                        <div class="bg-white p-2 rounded border border-slate-200"><span class="text-slate-400 block font-bold">Asientos</span><span class="font-bold text-slate-700 text-sm">${vehiculo.asientos}</span></div>
+                        <div class="bg-white p-2 rounded border border-slate-200"><span class="text-slate-400 block font-bold">Ejes</span><span class="font-bold text-slate-700 text-sm">${vehiculo.ejes}</span></div>
+                        <div class="bg-white p-2 rounded border border-slate-200"><span class="text-slate-400 block font-bold">Cilindros</span><span class="font-bold text-slate-700 text-sm">${vehiculo.cilindros}</span></div>
+                        <div class="bg-white p-2 rounded border border-slate-200"><span class="text-slate-400 block font-bold">C.C.</span><span class="font-bold text-slate-700 text-sm">${vehiculo.cc}</span></div>
+                        <div class="bg-white p-2 rounded border border-slate-200 col-span-2 sm:col-span-1"><span class="text-slate-400 block font-bold">Tonelaje</span><span class="font-bold text-slate-700 text-sm">${vehiculo.tonelaje}</span></div>
+                    </div>
+
+                    <div class="bg-white p-4 flex justify-between items-center px-6">
+                        <span class="text-xs text-slate-400 font-medium">Validación relacional via Core Web-Service.</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-black uppercase tracking-wider bg-green-100 text-green-800 border border-green-200">
+                            ${vehiculo.estado_vehiculo}
+                        </span>
+                    </div>
+                </div>
+            `;
+            resContainer.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
